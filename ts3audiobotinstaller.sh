@@ -1,9 +1,9 @@
 echo "Downloade Sachen..."
 echo "Fixe wahrscheinliche Fehler"
-rm /var/lib/apt/lists/lock
-rm /var/lib/apt/lists/lock
-rm /var/cache/apt/archives/lock
-rm /var/lib/dpkg/lock
+rm -f /var/lib/apt/lists/lock/
+rm -f /var/lib/apt/lists/lock/
+rm -f /var/cache/apt/archives/lock/
+rm -f /var/lib/dpkg/lock/
 dpkg --configure -a
 echo "Weiter mit der eigentlichen Installation"
 apt-get install sudo -y
