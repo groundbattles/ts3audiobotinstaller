@@ -1,12 +1,10 @@
 echo "Downloade Sachen..."
 echo "Fixe wahrscheinliche Fehler"
-lsof /var/lib/dpkg/lock
-lsof /var/lib/apt/lists/lock
-lsof /var/cache/apt/archives/locksudo rm /var/lib/apt/lists/lock
+rm /var/lib/apt/lists/lock
 rm /var/lib/apt/lists/lock
 rm /var/cache/apt/archives/lock
 rm /var/lib/dpkg/lock
-sudo dpkg --configure -a
+dpkg --configure -a
 echo "Weiter mit der eigentlichen Installation"
 apt-get install sudo -y
 apt-get install gpg -y
