@@ -14,7 +14,7 @@ apt-get install sudo -y
 apt install unzip -y && unzip Bot.zip -d Bot && cd Bot
 
 echo "Generiere Start Script"
-echo "bash TS3AudioBot.exe">startserver.sh
+echo "./TS3AudioBot.exe">startserver.sh
 echo "Fertig!"
 rm /root/Bot.zip
 sudo chmod +x /root/Bot/TS3AudioBot.exe
