@@ -1,11 +1,4 @@
 echo "Downloade Sachen..."
-echo "Fixe wahrscheinliche Fehler"
-rm -f /var/lib/apt/lists/lock/
-rm -f /var/lib/apt/lists/lock/
-rm -f /var/cache/apt/archives/lock/
-rm -f /var/lib/dpkg/lock/
-dpkg --configure -a
-echo "Weiter mit der eigentlichen Installation"
 apt-get install sudo -y
 apt-get install gpg -y
 wget wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
